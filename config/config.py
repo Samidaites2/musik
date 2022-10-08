@@ -33,7 +33,7 @@ DURATION_LIMIT_MIN = int(
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "900")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
@@ -44,7 +44,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5524856269").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -56,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/Samidaites2/musik",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -110,10 +110,10 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
 
 # Maximum Limit Allowed for users to save playlists on bot's server
-SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
+SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "10"))
 
 # MaximuM limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "10"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
