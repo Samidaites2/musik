@@ -130,7 +130,7 @@ gstats_11 : "**Statistik Umum {0}**\nPilih tombol dari bawah yang ingin Anda per
 # Play 
 
 #Play Callback 
-play cb1 : "Ini bukan untukmu! Cari Lagumu Sendiri."
+play cb1 : "Ini bukan lagu lu tod, cari sendiri kalo gabisa tanya @Banned_5 ato admin.."
 play cb2 : "Mendapatkan Hasil Selanjutnya"
 
 # Channel Play
