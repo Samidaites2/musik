@@ -28,13 +28,13 @@ STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist"]
-DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
+DELETEPLAYLIST_COMMAND : ["dplaylist"]
 
 
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
 SONG_COMMAND : ["song", "video"]
-LYRICS_COMMAND : ["lyrics"]
+LYRICS_COMMAND : ["lyrics", "lirik"]
 
 
 # Admin Commands
@@ -57,15 +57,15 @@ RESTART_COMMAND : ["restart"]
 # Sudo Command
 ADDSUDO_COMMAND : ["addsudo"]
 DELSUDO_COMMAND : ["delsudo"]
-SUDOUSERS_COMMAND : ["sudolist"]
+SUDOUSERS_COMMAND : ["kiw"]
 
 #Broadcast 
-BROADCAST_COMMAND : ["broadcast"]
+BROADCAST_COMMAND : ["gcast"]
 
 #Blacklist chat
 BLACKLISTCHAT_COMMAND : ["blacklistchat"]
 WHITELISTCHAT_COMMAND : ["whitelistchat"]
-BLACKLISTEDCHAT_COMMAND : ["blacklistedchat"]
+BLACKLISTEDCHAT_COMMAND : ["blacklisted"]
 
 # Video Calls Command
 VIDEOLIMIT_COMMAND : ["set_video_limit"]
@@ -76,10 +76,10 @@ MAINTENANCE_COMMAND : ["maintenance"]
 LOGGER_COMMAND : ["logger"]
 
 #Heroku
-GETLOG_COMMAND : ["get_log"]
-GETVAR_COMMAND : ["get_var"]
-DELVAR_COMMAND : ["del_var"]
-SETVAR_COMMAND : ["set_var"]
+GETLOG_COMMAND : ["getlog"]
+GETVAR_COMMAND : ["getvar"]
+DELVAR_COMMAND : ["delvar"]
+SETVAR_COMMAND : ["setvar"]
 USAGE_COMMAND : ["usage"]
 VARS_COMMAND : ["vars", "config"]
 
@@ -97,16 +97,16 @@ AUTHORIZED_COMMAND : ["authorized"]
 #Block Users Command
 BLOCK_COMMAND : ["block"]
 UNBLOCK_COMMAND : ["unblock"]
-BLOCKED_COMMAND : ["blockedusers"]
+BLOCKED_COMMAND : ["blocked"]
 
 #sPEEDTEST
 SPEEDTEST_COMMAND : ["speedtest"]
 
 #Voice chat commands
-ACTIVEVC_COMMAND : ["kiw"]
-ACTIVEVIDEO_COMMAND : ["kiw2"]
+ACTIVEVC_COMMAND : ["am"]
+ACTIVEVIDEO_COMMAND : ["av"]
 
 #Gban Commands
 GBAN_COMMAND : ["gban"]
 UNGBAN_COMMAND : ["ungban"]
-GBANNED_COMMAND : ["gbannedusers"]
+GBANNED_COMMAND : ["gbanned"]
