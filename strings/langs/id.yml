@@ -130,7 +130,7 @@ gstats_11 : "**Statistik Umum {0}**\nPilih tombol dari bawah yang ingin Anda per
 # Play 
 
 #Play Callback 
-play cb1 : "Ini bukan lagu lu tod, cari sendiri kalo gabisa tanya @Banned_5 ato admin.."
+play cb1 : "Ini bukan lagu lu tod, cari sendiri kalo gabisa tanya admin.."
 play cb2 : "Mendapatkan Hasil Selanjutnya"
 
 # Channel Play
@@ -204,8 +204,8 @@ lyrics_3 : "❌ Gagal mengambil lirik😞.\n\n💡**Mencoba Mencari:** {0}"
 lyrics_4 : "Klik tombol di bawah ini dan cari lirik untuk menghindari pencarian lirik jenis spam yang panjang."
 
 #Ping
-ping_1 : "Pong!!!!"
-ping_2 : "{0} berfungsi baik dengan ping `{1}` md.\n\nWaktu aktif bot adalah {2} dan telah menggunakan total {3} penyimpanan server. Beban CPU sekitar {4} dengan konsumsi {5} Ram. Klien Py-Tgcalls juga memiliki ping `{6}` ms yang bagus."
+ping_1 : "Duarrrrrrrrrrrrr..!!!"
+ping_2 : "{0} ping `{1}` ms.\n\nWaktu aktif {2}\n\nDisk {3}.\n\nCPU {4}\n\nRam {5}.\n\nPy-Tgcalls ping `{6}`."
 
 
 # Song
@@ -342,8 +342,8 @@ sudo_1 : "{0} sudah menjadi pengguna sudo."
 sudo_2 : "Ditambahkan *{0}** ke Pengguna Sudo."
 sudo_3 : "Bukan bagian dari Sudo Bot."
 sudo_4 : "Dihapus dari Pengguna Sudo Bot"
-sudo_5 : "👑<u> **Pemilik:**</u>\n"
-sudo_6 : "\n👨‍🚀<u> **Pengguna Sudo:**</u>\n"
+sudo_5 : "👑<u> **Boss saya:**</u>\n"
+sudo_6 : "\n👨‍🚀<u> **Ini juga sama:**</u>\n"
 sudo_7 : "Tidak Ada Pengguna Sudo"
 
 #Block
@@ -391,19 +391,19 @@ broad_1 : "**Broadcast {0} Obrolan dengan {1} Pin dari Bot.**"
 broad_2 : "Memulai Siaran Asisten..."
 broad_3 : "**Siaran Asisten:**\n\n"
 broad_4 : "Asisten {0} Disiarkan di {1} obrolan\n"
-broad_5 : "**Penggunaan**:\n/siarkan [PESAN] atau [Balas Pesan]"
+broad_5 : "**Penggunaan**:\n/gcast [PESAN] atau [Balas Pesan]"
 broad_6 : "Harap berikan beberapa teks untuk disiarkan."
 broad_7 : "**Broadcast {0} Pengguna.**"
 
 #Heroku
 heroku_1 : "Pastikan Heroku API Key Anda, Nama Aplikasi Anda dikonfigurasi dengan benar di heroku"
 heroku_2 : "Anda hanya bisa mendapatkan log dari Aplikasi Heroku"
-heroku_3 : "**Penggunaan:**\n/get_var [Nama Var]"
+heroku_3 : "**Penggunaan:**\n/getvar [Nama Var]"
 heroku_4 : "Tidak dapat menemukan var seperti itu."
 heroku_5 : ".env file tidak ditemukan."
-heroku_6 : "**Penggunaan:**\n/del_var [Nama Var]"
+heroku_6 : "**Penggunaan:**\n/delvar [Nama Var]"
 heroku_7 : "{0} Dihapus."
-heroku_8 : "**Penggunaan:**\n/set_var [Var Name] [Var Value]"
+heroku_8 : "**Penggunaan:**\n/setvar [Var Name] [Var Value]"
 heroku_9 : "{0} telah berhasil diperbarui"
 heroku_10 : "{0} telah berhasil ditambahkan"
 heroku_11 : "Hanya untuk Aplikasi Heroku"
@@ -413,8 +413,8 @@ heroku_14 : "Kesalahan Perintah Git"
 heroku_15 : "Repositori Git Tidak Valid"
 
 #Private bot mode
-pbot_1 : "**Penggunaan:**\n/otorisasi [CHAT_ID]"
-pbot_2 : "**Penggunaan:**\n/batalkan otorisasi [CHAT_ID]"
+pbot_1 : "**Penggunaan:**\n/auth [CHAT_ID]"
+pbot_2 : "**Penggunaan:**\n/unauth [CHAT_ID]"
 pbot_3 : "Menambahkan obrolan yang diberikan ke daftar resmi"
 pbot_4 : "Menghapus obrolan yang diberikan dari daftar resmi"
 pbot_5 : "Obrolan sudah ada di daftar yang diotorisasi"
@@ -424,7 +424,7 @@ pbot_8 : "Mohon tunggu.... Mengambil Obrolan Resmi."
 pbot_9 : "**<b>Obrolan yang Diambil:</b>**\n\n"
 pbot_10 : "Obrolan Pribadi"
 pbot_11 : "Tidak ditemukan Obrolan Resmi"
-pbot_12 : "Mode Bot Pribadi dinonaktifkan.\n\nUntuk menggunakan bot Anda sebagai bot pribadi, pastikan untuk menyetel **PRIVATE_BOT_MODE** = **Benar**"
+pbot_12 : "Mode Bot Pribadi dinonaktifkan.\n\nUntuk menggunakan bot Anda sebagai bot pribadi, pastikan untuk menyetel **PRIVATE_BOT_MODE** = **True**"
 pbot_13 : "\n**<b>Obrolan Tidak Diambil:</b>**\n\n"
 
 
@@ -466,7 +466,7 @@ sug_20 : "Anda bisa mendapatkan daftar lengkap perintah saya yang saya terima.\n
 sug_21 : "Bot memiliki opsi daftar putar sisi server.\n\nAnda dapat menambahkan musik di daftar putar Anda dan memutar semuanya bersama-sama melalui /play"
 sug_22 : "Sekarang Anda dapat mengacak musik yang antri di bot.\n\nPerintah: /shuffle"
 sug_23 : "Anda dapat memeriksa antrian musik.\n\nPerintah: /queue"
-sug_24 : "Anda dapat memeriksa pemilik saya dan pengguna sudo yang mengelola saya.\n\nPerintah: /sudolist"
+sug_24 : "Anda dapat memeriksa pemilik saya dan pengguna sudo yang mengelola saya.\n\nPerintah: /kiw"
 sug_25 : "Bot memiliki fitur yang disebut **Commands Delete Mode**. Bot ini akan menghapus perintah yang dieksekusi secara otomatis.\n\nAktifkan atau nonaktifkan deletemode dari /settings [__Diaktifkan secara default__]"
-sug_26 : "Anda dapat mengubah bahasa bot ke bahasa yang tersedia untuk memudahkan pemahaman.\n\nPerintah: /bahasa"
+sug_26 : "Anda dapat mengubah bahasa bot ke bahasa yang tersedia untuk memudahkan pemahaman.\n\nPerintah: /langs"
 sug_27 : "Bot memiliki fitur yang disebut **Force Play**.\n\n**Force Play** menghentikan trek yang sedang diputar di obrolan suara dan mulai memutar trek yang dicari secara instan tanpa mengganggu/mengosongkan antrean.\n\nPerintah: / kekuatan bermain"
