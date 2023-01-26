@@ -58,7 +58,7 @@ ForcePlay Commands = playforce , vplayforce , cplayforce
 
 ✅**<u>Bot's Server Playlists:</u>**
 /playlist  - Check Your Saved Playlist On Servers.
-/deleteplaylist - Delete any saved music in your playlist
+/dplaylist - Delete any saved music in your playlist
 /play  - Start playing Your Saved Playlist from Servers."""
 
 
@@ -118,9 +118,9 @@ HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
 /usage - Dyno Usage.
 
 🌐**<u>CONFIG VARS:</u>**
-/get_var - Get a config var from Heroku or .env.
-/del_var - Delete any var on Heroku or .env.
-/set_var [Var Name] [Value] - Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
+/getvar - Get a config var from Heroku or .env.
+/delvar - Delete any var on Heroku or .env.
+/setvar [Var Name] [Value] - Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
 
 🤖**<u>BOT COMMANDS:</u>**
 /reboot - Reboot your Bot. 
@@ -128,28 +128,28 @@ HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
 /speedtest - Check server speeds
 /maintenance [enable / disable] 
 /logger [enable / disable] - Bot logs the searched queries in logger group.
-/get_log [Number of Lines] - Get log of your bot from heroku or vps. Works for both.
+/getlog [Number of Lines] - Get log of your bot from heroku or vps. Works for both.
 /autoend [enable|disable] - Enable Auto stream end after 3 mins if no one is listening.
 
 📈**<u>STATS COMMANDS:</u>**
-/kiw - Check active voice chats on bot.
-/kiw2 - Check active video calls on bot.
+/am - Check active voice chats on bot.
+/av - Check active video calls on bot.
 /stats - Check Bots Stats
 
 ⚠️**<u>BLACKLIST CHAT FUNCTION:</u>**
 /blacklistchat [CHAT_ID] - Blacklist any chat from using Music Bot
 /whitelistchat [CHAT_ID] - Whitelist any blacklisted chat from using Music Bot
-/blacklistedchat - Check all blacklisted chats.
+/blacklisted - Check all blacklisted chats.
 
 👤**<u>BLOCKED FUNCTION:</u>**
 /block [Username or Reply to a user] - Prevents a user from using bot commands.
 /unblock [Username or Reply to a user] - Remove a user from Bot's Blocked List.
-/blockedusers - Check blocked Users Lists
+/blocked - Check blocked Users Lists
 
 👤**<u>GBAN FUNCTION:</u>**
 /gban [Username or Reply to a user] - Gban a user from bot's served chat and stop him from using your bot.
 /ungban [Username or Reply to a user] - Remove a user from Bot's gbanned List and allow him for using your bot
-/gbannedusers - Check Gbanned Users Lists
+/gbanned - Check Gbanned Users Lists
 
 🎥**<u>VIDEOCALLS FUNCTION:</u>**
 /set_video_limit [Number of Chats] - Set a maximum Number of Chats allowed for Video Calls at a time. Default to 3 chats.
@@ -161,7 +161,7 @@ HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
 /authorized - Check all allowed chats of your bot.
 
 🌐**<u>BROADCAST FUNCTION:</u>**
-/broadcast [Message or Reply to a Message] - Broadcast any message to Bot's Served Chats.
+/gcast [Message or Reply to a Message] - Broadcast any message to Bot's Served Chats.
 
 <u>options for broadcast:</u>
 **-pin** : This will pin your message 
@@ -170,6 +170,6 @@ HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
 **-assistant** : This will broadcast your message from assistant account of your bot.
 **-nobot** : This will force your bot to not broadcast message
 
-**Example:** `/broadcast -user -assistant -pin Hello Testing`
+**Example:** `/gcast -user -assistant -pin Hello Testing`
 
 """
