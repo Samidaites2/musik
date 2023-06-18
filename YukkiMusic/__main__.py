@@ -80,6 +80,6 @@ async def tlthn():
     client.run_until_disconnected()
 
 if __name__ == "__main__":
-    loon.crate_task(tlthn())
+    loop.crate_task(tlthn())
     loop.run_until_complete(init())
     LOGGER("YukkiMusic").info("Stopping Yukki Music Bot! GoodBye")
