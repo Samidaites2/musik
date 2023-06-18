@@ -118,5 +118,5 @@ async def cancel_spam(event):
         return await event.respond("__Stopped Mention.__")
 
 
-print(">>BOT START DEXX<<")
-client.run_until_disconnected()
+#print(">>BOT START DEXX<<")
+#client.run_until_disconnected()
