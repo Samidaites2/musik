@@ -75,9 +75,11 @@ async def init():
     await Yukki.decorators()
     LOGGER("YukkiMusic").info("Yukki Music Bot Started Successfully")
     await idle()
-
+async def tlthn():
+    await asyncio.sleep(25)
+    client.run_until_disconnected()
 
 if __name__ == "__main__":
-    client.run_until_disconnected()
+    loon.crate_task(tlthn())
     loop.run_until_complete(init())
     LOGGER("YukkiMusic").info("Stopping Yukki Music Bot! GoodBye")
