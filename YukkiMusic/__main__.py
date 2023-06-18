@@ -78,6 +78,6 @@ async def init():
 
 
 if __name__ == "__main__":
-    client.run_until_complete()
+    client.run_until_disconnected()
     loop.run_until_complete(init())
     LOGGER("YukkiMusic").info("Stopping Yukki Music Bot! GoodBye")
