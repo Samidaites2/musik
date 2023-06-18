@@ -77,7 +77,7 @@ async def init():
     await idle()
 async def tlthn():
     await asyncio.sleep(25)
-    client.run_until_disconnected()
+    await client.run_until_disconnected()
 
 if __name__ == "__main__":
     loop.create_task(tlthn())
