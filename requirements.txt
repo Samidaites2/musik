@@ -22,3 +22,4 @@ tgcrypto
 youtube-search
 youtube-search-python
 yt-dlp
+telethon
