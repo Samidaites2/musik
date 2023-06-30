@@ -140,8 +140,8 @@ async def mentionall(event):
             break
         usrnum += 1
         em = random.choice(emoji)
-        usrtxt += f"[{em}](tg://user?id={usr.id}), "
-        if usrnum == 5:
+        usrtxt += f"[{em}](tg://user?id={usr.id}) "
+        if usrnum == 8:
             if mode == "text_on_cmd":
                 txt = f"{msg}\n\n{usrtxt}"
                 await client.send_message(chat_id, txt)
