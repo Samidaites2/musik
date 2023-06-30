@@ -44,10 +44,12 @@ async def sg(client: Client, message: Message):
         return await lol.edit(e)
     await asyncio.sleep(1)
     async for stalk in ubot.search_messages(a.chat.id):
+        if stalk.text == None:
+            pass
         if not stalk:
             await message.reply("botnya ngambek")
         elif stalk:
-            await message.reply(f"{stalk.text}\nanu")
+            await message.reply(f"{stalk.text}")
     try:
       user_info = await ubot.resolve_peer(sg)
       await ubot.send(DeleteHistory(peer=user_info, max_id=0, revoke=True))
