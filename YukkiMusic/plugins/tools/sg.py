@@ -41,7 +41,7 @@ async def sg(client: Client, message: Message):
     except Exception as e:
         return await lol.edit(e)
     await asyncio.sleep(1)
-    async for stalk in ubot.search_messages(a.chat.id, 10):
+    async for stalk in ubot.search_messages(a.chat.id, limit=10):
         if not stalk:
             await message.reply("botnya ngambek")
         elif stalk:
