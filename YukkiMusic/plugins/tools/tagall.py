@@ -135,11 +135,11 @@ async def mentionall(event):
          "🖕", 
          "💋", 
      ]
-    em = random.choice(emoji)
     async for usr in client.iter_participants(chat_id):
         if not chat_id in spam_chats:
             break
         usrnum += 1
+        em = random.choice(emoji)
         usrtxt += f"[{em}](tg://user?id={usr.id}), "
         if usrnum == 5:
             if mode == "text_on_cmd":
