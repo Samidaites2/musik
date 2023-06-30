@@ -14,7 +14,7 @@ async def sg(client: Client, message: Message):
     if message.reply_to_message:
         args = message.reply_to_message.from_user.id
     else:
-        if len(message.text.split()) < 1:
+        if len(message.text.split()) == 0:
             return await message.reply("sg username/id/reply")
         else:
             args = message.text.split()[1]
