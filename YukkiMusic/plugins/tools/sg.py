@@ -8,16 +8,6 @@ from YukkiMusic import userbot as us, app
 from YukkiMusic.core.userbot import assistants
 
 def ass():
-  if 1 in assistants:
-    return ubot = us.one
-  if 2 in assistants:
-    return ubot = us.two
-  if 3 in assistants:
-    return ubot = us.three
-  if 4 in assistants:
-    return ubot = us.four
-  if 5 in assistants:
-    return ubot = us.five
 
 
 
@@ -37,6 +27,16 @@ async def sg(client: Client, message: Message):
             return await lol.edit("<code>Please specify a valid user!</code>")
     bo = ["sangmata_bot", "sangmata_beta_bot"]
     sg = random.choice(bo)
+    if 1 in assistants:
+      ubot = us.one
+    if 2 in assistants:
+      ubot = us.two
+    if 3 in assistants:
+      ubot = us.three
+    if 4 in assistants:
+      ubot = us.four
+    if 5 in assistants:
+      ubot = us.five
     try:
         a = await ubot.send_message(sg, f"{user.id}")
     except Exception as e:
