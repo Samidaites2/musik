@@ -5,9 +5,21 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from YukkiMusic import userbot as us, app
+from YukkiMusic.core.userbot import assistants
 
-ubot = us.one or us.two or us.three or us.four or us.five
+def ass():
+  if 1 in assistants:
+    return us.one
+  if 2 in assistants:
+    return us.two
+  if 3 in assistants:
+    return us.three
+  if 4 in assistants:
+    return us.four
+  if 5 in assistants:
+    return us.five
 
+ubot = ass()
 
 @app.on_message(filters.command("sg"))
 async def sg(client: Client, message: Message):
