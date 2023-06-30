@@ -45,7 +45,7 @@ async def sg(client: Client, message: Message):
     await asyncio.sleep(1)
     async for stalk in ubot.search_messages(a.chat.id):
         if stalk.text == None:
-            pass
+            continue
         if not stalk:
             await message.reply("botnya ngambek")
         elif stalk:
