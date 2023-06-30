@@ -9,15 +9,15 @@ from YukkiMusic.core.userbot import assistants
 
 def ass():
   if 1 in assistants:
-    return us.one
+    return ubot = us.one
   if 2 in assistants:
-    return us.two
+    return ubot = us.two
   if 3 in assistants:
-    return us.three
+    return ubot = us.three
   if 4 in assistants:
-    return us.four
+    return ubot = us.four
   if 5 in assistants:
-    return us.five
+    return ubot = us.five
 
 ubot = ass()
 
