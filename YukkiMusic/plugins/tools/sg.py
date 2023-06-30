@@ -7,7 +7,6 @@ from pyrogram.types import Message
 from YukkiMusic import userbot as us, app
 from YukkiMusic.core.userbot import assistants
 
-def ass():
 
 
 
