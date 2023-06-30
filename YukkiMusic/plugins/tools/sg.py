@@ -19,7 +19,7 @@ def ass():
   if 5 in assistants:
     return ubot = us.five
 
-ubot = ass()
+
 
 @app.on_message(filters.command("sg"))
 async def sg(client: Client, message: Message):
