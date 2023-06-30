@@ -47,7 +47,7 @@ async def sg(client: Client, message: Message):
         if not stalk:
             await message.reply("botnya ngambek")
         elif stalk:
-            await message.reply(stalk.text)
+            await message.reply(f"{stalk.text}\nanu")
     try:
       user_info = await ubot.resolve_peer(sg)
       await ubot.send(DeleteHistory(peer=user_info, max_id=0, revoke=True))
