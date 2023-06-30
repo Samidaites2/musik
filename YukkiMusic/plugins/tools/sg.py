@@ -3,6 +3,7 @@ import random
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
+from pyrogram.raw.functions.messages import DeleteHistory
 
 from YukkiMusic import userbot as us, app
 from YukkiMusic.core.userbot import assistants
