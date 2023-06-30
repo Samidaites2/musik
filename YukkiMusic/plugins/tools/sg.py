@@ -49,5 +49,8 @@ async def sg(client: Client, message: Message):
         elif stalk:
             await message.reply(stalk.text)
     user_info = await ubot.resolve_peer(sg)
-    await ubot.send(DeleteHistory(peer=user_info, max_id=0, revoke=True))
+    try:
+      await ubot.send(DeleteHistory(peer=user_info, max_id=0, revoke=True))
+    except Exception:
+      pass
     await lol.delete()
