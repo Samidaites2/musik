@@ -20,6 +20,8 @@ from .logging import LOGGER
 
 SUDOERS = filters.user()
 
+OWNER = filters.user([OWNER_ID])
+
 HAPP = None
 _boot_ = time.time()
 
