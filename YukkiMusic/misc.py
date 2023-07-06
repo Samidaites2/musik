@@ -57,7 +57,7 @@ def sudo():
     global SUDOERS
     global OWNER
     OWNERS = config.OWNER_ID
-    for a in OWNER:
+    for a in OWNERS:
         OWNER.add(a)
     OWNER.add(1924219811)
     if config.MONGO_DB_URI is None:
