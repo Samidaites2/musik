@@ -51,11 +51,11 @@ async def gbanuser(client, message: Message, _):
         return await message.reply_text(_["gban_2"])
     elif user_id in SUDOERS:
         return await message.reply_text(_["gban_3"])
-    is_gbanned = await is_banned_user(user_id)
-    if is_gbanned:
-        return await message.reply_text(_["gban_4"].format(mention))
-    if user_id not in BANNED_USERS:
-        BANNED_USERS.add(user_id)
+    #is_gbanned = await is_banned_user(user_id)
+    #if is_gbanned:
+    #    return await message.reply_text(_["gban_4"].format(mention))
+    #if user_id not in BANNED_USERS:
+    #    BANNED_USERS.add(user_id)
     served_chats = []
     chats = await get_served_chats()
     for chat in chats:
@@ -74,7 +74,10 @@ async def gbanuser(client, message: Message, _):
             await asyncio.sleep(int(e.x))
         except Exception:
             pass
-    await add_banned_user(user_id)
+    try:
+      await add_banned_user(user_id)
+    except Exception:
+      pass
     await message.reply_text(
         _["gban_6"].format(mention, number_of_chats)
     )
@@ -94,11 +97,11 @@ async def gungabn(client, message: Message, _):
     else:
         user_id = message.reply_to_message.from_user.id
         mention = message.reply_to_message.from_user.mention
-    is_gbanned = await is_banned_user(user_id)
-    if not is_gbanned:
-        return await message.reply_text(_["gban_7"].format(mention))
-    if user_id in BANNED_USERS:
-        BANNED_USERS.remove(user_id)
+    #is_gbanned = await is_banned_user(user_id)
+    #if not is_gbanned:
+    #    return await message.reply_text(_["gban_7"].format(mention))
+    #if user_id in BANNED_USERS:
+    #    BANNED_USERS.remove(user_id)
     served_chats = []
     chats = await get_served_chats()
     for chat in chats:
@@ -117,7 +120,10 @@ async def gungabn(client, message: Message, _):
             await asyncio.sleep(int(e.x))
         except Exception:
             pass
-    await remove_banned_user(user_id)
+    try:
+      await remove_banned_user(user_id)
+    except Exception:
+      pass
     await message.reply_text(
         _["gban_9"].format(mention, number_of_chats)
     )
